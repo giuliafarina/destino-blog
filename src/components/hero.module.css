@@ -1,7 +1,7 @@
 .hero {
   align-items: flex-end;
   display: flex;
-  margin: 0 auto;
+  margin: 15% auto;
   max-width: var(--size-max-width);
   min-height: 200px;
   padding: 0 0 var(--size-gutter);
@@ -51,7 +51,6 @@
   .hero {
     padding-top: var(--size-gutter);
   }
-
   .details {
     max-width: 44rem;
     padding: var(--space-3xl) var(--size-gutter) 0;
@@ -63,7 +62,6 @@
     margin-left: auto;
     width: 85%;
   }
-
   .details {
     left: var(--size-gutter);
     padding: var(--space-3xl) var(--size-gutter) 0 0;
