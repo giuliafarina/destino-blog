@@ -16,7 +16,7 @@ class Template extends React.Component {
         <Seo />
         <Navigation />
         <main>{children}</main>
-        <Search indices={searchIndices} />
+        {/* <Search indices={searchIndices} /> */}
         <Footer />
       </>
     )
