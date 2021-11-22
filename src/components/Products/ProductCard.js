@@ -72,7 +72,7 @@ const ProductCard = ({ product }) => {
                     <legend>
                         <h4>{product.name}</h4>
                     </legend>
-                    <img src={product.images} />
+
                     <label>
                         Price{" "}
                         <select name="priceSelect">
