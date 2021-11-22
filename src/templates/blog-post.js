@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
-
 import Seo from '../components/seo'
 import Layout from '../components/layout'
 import Hero from '../components/hero'
@@ -22,15 +21,16 @@ class BlogPostTemplate extends React.Component {
           image={`http:${post.heroImage.resize.src}`}
         />
         <Hero
-          image={post.heroImage.gatsbyImageData}
+          image={post.heroImage?.gatsbyImageData}
           title={post.title}
-          content={post.description.childMarkdownRemark.excerpt}
+          content={post.description?.childMarkdownRemark.excerpt}
         />
         <div className={styles.container}>
           <span className={styles.meta}>
             {post.author.name} &middot;{' '}
-            <time dateTime={post.rawDate}>{post.publishDate}</time> –{' '}
-            {post.body.childMarkdownRemark.timeToRead} minute read
+            <time dateTime={post.rawDate}>{post.publishDate}</time>
+            {/* –{' '}
+            {post.body.childMarkdownRemark.timeToRead} minute read */}
           </span>
           <div className={styles.article}>
             <div
