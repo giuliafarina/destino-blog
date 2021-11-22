@@ -50,5 +50,11 @@ module.exports = {
       resolve: "gatsby-source-contentful",
       options: contentfulConfig,
     },
+    {
+      resolve: 'gatsby-plugin-snipcart',
+      options: {
+        apiKey: 'YOODNkNTdlYmEtZTgyZC00ODBhLTg0NTgtMGY5ODhiYzNlYjVjNjM3NzMxNjY5NTUwOTE4NzQ2'
+      }
+    },
   ],
 };
