@@ -24,12 +24,11 @@ class RootIndex extends React.Component {
           <p>$19.99</p>
           <p>Wear one or seventeen! These rings are fun to mix and match.</p>
           <button
-            class="snipcart-add-item"
+            className="snipcart-add-item"
             data-item-id="silver-stacking-ring"
             data-item-price="19.99"
             data-item-url="/"
             data-item-name="Silver Stacking Ring"
-            data-item-file-guid="your-digital-product-guid"
           >
             Add to cart
           </button>

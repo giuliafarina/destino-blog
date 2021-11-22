@@ -47,14 +47,15 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-plugin-image",
     {
+      resolve: "gatsby-plugin-snipcartv3",
+      options: {
+        apiKey: "ODNkNTdlYmEtZTgyZC00ODBhLTg0NTgtMGY5ODhiYzNlYjVjNjM3NzMxNjY5NTUwOTE4NzQ2"
+      }
+    },
+    {
       resolve: "gatsby-source-contentful",
       options: contentfulConfig,
     },
-    {
-      resolve: 'gatsby-plugin-snipcart',
-      options: {
-        apiKey: 'YOODNkNTdlYmEtZTgyZC00ODBhLTg0NTgtMGY5ODhiYzNlYjVjNjM3NzMxNjY5NTUwOTE4NzQ2'
-      }
-    },
+
   ],
 };
