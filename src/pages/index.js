@@ -29,6 +29,7 @@ class RootIndex extends React.Component {
             data-item-price="19.99"
             data-item-url="/"
             data-item-name="Silver Stacking Ring"
+            data-item-file-guid="a26f3216-1d47-48b5-96bc-265a43b170b3"
           >
             Add to cart
           </button>
