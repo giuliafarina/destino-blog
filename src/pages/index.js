@@ -7,6 +7,7 @@ import ArticlePreview from '../components/article-preview'
 import ProductCard from '../components/products/product-card'
 import Products from '../components/Products/products'
 
+
 class RootIndex extends React.Component {
   render() {
     const posts = get(this, 'props.data.allContentfulBlogPost.nodes')
