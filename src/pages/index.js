@@ -5,6 +5,7 @@ import get from 'lodash/get'
 import Layout from '../components/layout'
 import Hero from '../components/hero'
 import ArticlePreview from '../components/article-preview'
+import ProductCard from '../components/product-card'
 
 class RootIndex extends React.Component {
   render() {
@@ -19,20 +20,7 @@ class RootIndex extends React.Component {
           content={author.shortBio.shortBio}
         />
         <ArticlePreview posts={posts} />
-        <section>
-          <h2>Silver Stacking Ring</h2>
-          <p>$19.99</p>
-          <p>Wear one or seventeen! These rings are fun to mix and match.</p>
-          <button
-            className="snipcart-add-item"
-            data-item-id="silver-stacking-ring"
-            data-item-price="19.99"
-            data-item-url="/"
-            data-item-name="Silver Stacking Ring"
-          >
-            Add to cart
-          </button>
-        </section>
+        <ProductCard />
       </Layout>
     )
   }
