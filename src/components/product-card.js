@@ -22,8 +22,8 @@ query Product {
   return <section>
     {data.allContentfulResource.nodes.map(node =>
       <div>
-        <h1>
-          {node.title}</h1>
+        <h1 key={node.id}
+          title={node.title} />
         <h4>{node.childContentfulResourceDescriptionTextNode.description}</h4>
         <h2>{node.price} £</h2>
 
