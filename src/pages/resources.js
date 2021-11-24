@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import get from 'lodash/get'
 import Seo from '../components/seo'
 import Layout from '../components/layout'
-import Product from '../components/Products/product'
+import Product from '../components/products/product'
 import Hero from '../components/hero'
 
 const Resources = () => {

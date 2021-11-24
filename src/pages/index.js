@@ -4,6 +4,8 @@ import get from 'lodash/get'
 import Layout from '../components/layout'
 import Hero from '../components/hero'
 import ArticlePreview from '../components/article-preview'
+import Product from '../components/Products/product'
+import ProductCard from '../components/products/product-card'
 
 
 

@@ -30,6 +30,7 @@ const buttonStyles = {
   cursor: "pointer"
 }
 
+
 const titleStyles = {
   textAlign: "center"
 }
@@ -41,7 +42,7 @@ const priceStyles = {
 const ProductCard = (props) => {
   const data = useStaticQuery(graphql`
 query Product {
-   allContentfulResource {
+   allContentfulResource(sort: {fields: createdAt, order: ASC}) {
     nodes {
       id
       childContentfulResourceDescriptionTextNode {
