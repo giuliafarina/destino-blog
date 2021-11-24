@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 const cardStyles = {
   display: "flex",
   flexDirection: "column",
-  justifyContent: "space-around",
+  justifyContent: "space-evenly",
   alignItems: "flex-start",
   padding: "1rem",
   marginBottom: "1rem",

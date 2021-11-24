@@ -4,8 +4,7 @@ import get from 'lodash/get'
 import Layout from '../components/layout'
 import Hero from '../components/hero'
 import ArticlePreview from '../components/article-preview'
-import ProductCard from '../components/products/product-card'
-import Products from '../components/Products/products'
+
 
 
 class RootIndex extends React.Component {
@@ -21,7 +20,6 @@ class RootIndex extends React.Component {
           content={author.shortBio.shortBio}
         />
         <ArticlePreview posts={posts} />
-        <Products />
       </Layout>
     )
   }

@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import get from 'lodash/get'
 import Seo from '../components/seo'
 import Layout from '../components/layout'
-import Products from '../components/Products/products'
+import Product from '../components/Products/product'
 import Hero from '../components/hero'
 
 const Resources = () => {
@@ -15,7 +15,7 @@ const Resources = () => {
 who have neurodiversity challenges, which is what inspires many of the teaching resources I have
 created."
             />
-            <Products />
+            <Product />
         </Layout>
     )
 }

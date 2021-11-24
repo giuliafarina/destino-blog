@@ -1,6 +1,6 @@
 import React from "react"
 import ProductCard from "./product-card"
-import { graphql, StaticQuery } from "gatsby"
+
 
 
 const containerStyles = {
@@ -10,13 +10,12 @@ const containerStyles = {
     padding: "1rem",
 }
 
-const Products = () => {
+const Product = () => {
     return (
         <div style={containerStyles}>
             <ProductCard />
-
         </div>
     )
 }
 
-export default Products;
+export default Product;
