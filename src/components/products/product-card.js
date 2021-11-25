@@ -37,7 +37,9 @@ query Product {
     nodes {
       id
       childContentfulResourceDescriptionTextNode {
-        description
+        childrenMarkdownRemark{
+          html
+        }
       }
       price
       title
@@ -51,7 +53,9 @@ query Product {
     {data.allContentfulResource.nodes.map(node =>
       <div className={styles.cardBody} key={node.id}>
         <h3 className={styles.title}>{node.title} </h3>
-        <p>{node.childContentfulResourceDescriptionTextNode.description}</p>
+        <div dangerouslySetInnerHTML={{
+          __html: node.childContentfulResourceDescriptionTextNode.childrenMarkdownRemark[0].html,
+        }} />
         <h4 className={styles.price}>{node.price} £</h4>
         <button className={styles.button}
           className="snipcart-add-item"
