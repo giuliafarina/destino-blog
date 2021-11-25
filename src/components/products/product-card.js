@@ -1,43 +1,34 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import * as styles from "./product-card.module.css"
 
 
-const cardStyles = {
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "space-evenly",
-  alignItems: "flex-start",
-  padding: "1rem",
-  marginBottom: "1rem",
-  boxShadow: "5px 5px 25px 0 rgba(46,61,73,.2)",
-  backgroundColor: "white",
-  borderRadius: "6px",
-  border: "solid 1px",
-  maxWidth: "300px",
-  color: "black"
-}
-const buttonStyles = {
-  display: "block",
-  fontSize: "13px",
-  textAlign: "center",
-  color: "#000",
-  padding: "12px",
-  boxShadow: "2px 5px 10px rgba(0,0,0,.1)",
-  backgroundColor: "white",
-  borderRadius: "6px",
-  letterSpacing: "1.5px",
-  margin: "auto",
-  cursor: "pointer"
+
+
+
+const size = {
+  mobileS: '320px',
+  mobileM: '375px',
+  mobileL: '425px',
+  tablet: '768px',
+  laptop: '1024px',
+  laptopL: '1440px',
+  desktop: '2560px'
 }
 
 
-const titleStyles = {
-  textAlign: "center"
-}
-const priceStyles = {
-  textAlign: "center",
-  margin: "auto"
-}
+export const device = {
+  mobileS: `(min-width: ${size.mobileS})`,
+  mobileM: `(min-width: ${size.mobileM})`,
+  mobileL: `(min-width: ${size.mobileL})`,
+  tablet: `(min-width: ${size.tablet})`,
+  laptop: `(min-width: ${size.laptop})`,
+  laptopL: `(min-width: ${size.laptopL})`,
+  desktop: `(min-width: ${size.desktop})`,
+  desktopL: `(min-width: ${size.desktop})`
+};
+
+
 
 const ProductCard = (props) => {
   const data = useStaticQuery(graphql`
@@ -56,13 +47,13 @@ query Product {
 }
 `);
 
-  return <>
+  return <div className={styles.container}>
     {data.allContentfulResource.nodes.map(node =>
-      <div style={cardStyles} key={node.id}>
-        <h3 style={titleStyles}>{node.title} </h3>
-        {/* <p>{node.childContentfulResourceDescriptionTextNode.description}</p> */}
-        <h4 style={priceStyles}>{node.price} £</h4>
-        <button style={buttonStyles}
+      <div className={styles.cardBody} key={node.id}>
+        <h3 className={styles.title}>{node.title} </h3>
+        <p>{node.childContentfulResourceDescriptionTextNode.description}</p>
+        <h4 className={styles.price}>{node.price} £</h4>
+        <button className={styles.button}
           className="snipcart-add-item"
           data-item-id={node.id}
           data-item-price={node.price}
@@ -74,7 +65,7 @@ query Product {
         </button>
       </div>
     )}
-  </>
+  </div>
 }
 
 
