@@ -7,6 +7,11 @@
   grid-gap: var(--space-3xl);
 }
 
+.header {
+  text-align: center;
+  padding: 5%;
+}
+
 .title {
   display: inline-block;
   font-size: var(--text-lg);
@@ -20,7 +25,7 @@
 }
 
 .link:hover .title {
-  border-bottom-color: var(--primary);
+  border-bottom-color: var(--black);
 }
 
 .meta {

@@ -1,12 +1,12 @@
 :root {
   /* primitives */
   /* font-family */
-  --font-sans: 'Inter var', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-sans: 'Avenir', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   --font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
   --font-serif: 'Times New Roman', Times, serif;
   /* palette */
-  --white: #fff;
-  --black: #000;
+  --white: rgb(255, 255, 255);
+  --black: #373F49;
   --teal: rgb(134, 164, 159);
   --black-fade-5: rgba(0, 0, 0, 0.05);
   /* radii */
@@ -58,7 +58,7 @@
   /* size */
   --size-gutter: var(--space-2xl);
   --size-logo: var(--space-2xl);
-  --size-max-width: 80rem;
+  --size-max-width: 75rem;
 }
 
 @media (min-width: 480px) {

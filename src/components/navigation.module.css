@@ -27,8 +27,8 @@
 }
 
 .navigationItem a:hover {
-  border-bottom-color: var(--primary);
-  color: var(--primary);
+  border-bottom-color: var(--black);
+  color: var(--black);
 }
 
 .logoLink {
@@ -41,7 +41,7 @@
 }
 
 @media (max-width: 767px) {
-  .logoLink > span:last-child {
+  .logoLink>span:last-child {
     border: 0;
     clip: rect(0, 0, 0, 0);
     height: 1px;
