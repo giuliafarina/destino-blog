@@ -1,10 +1,9 @@
 import React from 'react'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import * as styles from './hero.module.css'
-import Checkout from './checkout'
 
 const Hero = ({ image, title, content }) => (
-  <><div className={styles.hero}>
+  <div className={styles.hero}>
     {image && (
       <GatsbyImage className={styles.image} alt={title} image={image} />
     )}
@@ -13,7 +12,6 @@ const Hero = ({ image, title, content }) => (
       {content && <p className={styles.content}>{content}</p>}
     </div>
   </div>
-    {/* <Checkout /></> */}</>
 )
 
 export default Hero

@@ -46,7 +46,7 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
     "gatsby-plugin-image",
-    `gatsby-plugin-styled-components`,
+
     {
       resolve: "gatsby-plugin-snipcartv3",
       options: {
@@ -60,25 +60,8 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
       }
     },
-    {
-      resolve: "gatsby-source-stripe",
-      options: {
-        objects: ["Price", "Product"],
-        secretKey: process.env.STRIPE_SECRET_KEY,
-        publishableKey: process.env.STRIPE_PUBLISHABLE_KEY,
-        downloadFiles: true
 
-      }
 
-    },
-    {
-      resolve: `gatsby-plugin-algolia`,
-      options: {
-        appId: process.env.GATSBY_ALGOLIA_APP_ID,
-        apiKey: process.env.ALGOLIA_ADMIN_KEY,
-
-      }
-    }
 
   ],
 };
