@@ -1,6 +1,7 @@
 .tags {
   display: flex;
   gap: var(--space-md);
+  flex-wrap: wrap;
 }
 
 .tag {
@@ -8,4 +9,5 @@
   border-radius: var(--radius-sm);
   line-height: var(--solid);
   padding: var(--space-sm) var(--space-md);
+  height: max-content;
 }

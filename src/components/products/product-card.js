@@ -38,7 +38,7 @@ query Product {
       id
       childContentfulResourceDescriptionTextNode {
         childrenMarkdownRemark{
-          html
+           excerpt(format: HTML)
         }
       }
       price
@@ -54,7 +54,7 @@ query Product {
       <div className={styles.cardBody} key={node.id}>
         <h3 className={styles.title}>{node.title} </h3>
         <div dangerouslySetInnerHTML={{
-          __html: node.childContentfulResourceDescriptionTextNode.childrenMarkdownRemark[0].html,
+          __html: node.childContentfulResourceDescriptionTextNode.childrenMarkdownRemark[0].excerpt,
         }} />
         <h4 className={styles.price}>{node.price} £</h4>
         <button className={styles.button}

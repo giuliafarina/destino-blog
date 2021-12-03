@@ -14,8 +14,8 @@ const ArticlePreview = ({ posts }) => {
 
   return (
     <Container>
-      <h1 className={styles.header}>Recent posts</h1>
-      {/* <SearchBar /> */}
+      {/* <h1 className={styles.header}>Recent posts</h1>
+      <SearchBar /> */}
       <ul className={styles.articleList}>
         {posts.map((post) => {
           return (
