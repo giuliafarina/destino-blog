@@ -36,7 +36,7 @@ query Product {
           className="snipcart-add-item"
           data-item-id={node.id}
           data-item-price={node.price}
-          data-item-url="/"
+          data-item-url="/resources"
           data-item-name={node.title}
           data-item-description={node.childContentfulResourceDescriptionTextNode.description}
         >
