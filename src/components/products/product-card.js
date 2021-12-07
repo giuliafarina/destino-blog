@@ -38,6 +38,7 @@ query Product {
           data-item-price={node.price}
           data-item-url="/resources"
           data-item-name={node.title}
+          data-item-file-guid={node.fileId}
           data-item-description={node.childContentfulResourceDescriptionTextNode.description}
         >
           Add to cart
