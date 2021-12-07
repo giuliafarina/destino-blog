@@ -19,6 +19,7 @@ class RootIndex extends React.Component {
           image={author.heroImage.gatsbyImageData}
           title={author.name}
           content={author.shortBio.shortBio}
+
         />
         <ArticlePreview posts={posts} />
       </Layout>
