@@ -19,9 +19,6 @@ const HitCount = connectStateResults(({ searchResults }) => {
 })
 
 const PageHit = ({ hit }) => {
-
-
-    console.log(hit)
     return <div>
         <Link to={hit.url}>
             <h4>
@@ -39,11 +36,11 @@ const HitsInIndex = ({ index }) => (
     </Index>
 )
 
-const SearchResult = ({ indices, className }) => (
+const SearchResult = ({ show, indices, className }) => (
     <div className={className}>
-        {indices.map(index => (
+        {show ? indices.map(index => (
             <HitsInIndex index={index} key={index.name} />
-        ))}
+        )) : null}
 
     </div>
 )
