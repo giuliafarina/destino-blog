@@ -38,15 +38,15 @@ export default styled(SearchBox)`
     border-radius: 2px;
     color: white;
     ::placeholder{
-color:white;
-opacity:0.4;
+      color:white;
+      opacity:0.4;
     }
     
     ${({ hasFocus }) => (hasFocus ? open : closed)}
   }
 
   .SearchInput :hover{
-  border-bottom: solid 2px;
+    border-bottom: solid 2px;
   }
 
   .SearchIcon {

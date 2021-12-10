@@ -5,21 +5,17 @@ const indexName = `Pages`
 
 const pageQuery = `{
   allContentfulBlogPost {
-    edges {
-      node {
-        id
-          title
-          slug
-      }
+    nodes {
+      id
+      title
+      slug
     }
   }
 }`
 
-function pageToAlgoliaRecord({ node: { id, frontmatter, fields, ...rest } }) {
+function pageToAlgoliaRecord({ id, ...rest }) {
   return {
     objectID: id,
-    ...frontmatter,
-    ...fields,
     ...rest,
   }
 }
@@ -27,7 +23,7 @@ function pageToAlgoliaRecord({ node: { id, frontmatter, fields, ...rest } }) {
 const queries = [
   {
     query: pageQuery,
-    transformer: ({ data }) => data.pages.edges.map(pageToAlgoliaRecord),
+    transformer: ({ data }) => data.allContentfulBlogPost.nodes.map(pageToAlgoliaRecord),
     indexName,
     settings: { attributesToSnippet: [`excerpt:20`] },
   },
