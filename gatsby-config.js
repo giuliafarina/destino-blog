@@ -54,17 +54,7 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
       }
     },
-    {
-      resolve: "gatsby-source-stripe",
-      options: {
-        objects: ["Price", "Product"],
-        secretKey: process.env.STRIPE_SECRET_KEY,
-        publishableKey: process.env.STRIPE_PUBLISHABLE_KEY,
-        downloadFiles: true
 
-      }
-
-    },
     {
       resolve: `gatsby-plugin-algolia`,
       options: {
