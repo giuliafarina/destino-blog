@@ -6,6 +6,7 @@ import Tags from './tags'
 import * as styles from './article-preview.module.css'
 
 
+
 const ArticlePreview = ({ posts }) => {
   if (!posts) return null
   if (!Array.isArray(posts)) return null
@@ -14,8 +15,8 @@ const ArticlePreview = ({ posts }) => {
 
   return (
     <Container>
-      {/* <h1 className={styles.header}>Recent posts</h1>
-      <SearchBar /> */}
+      <h1 className={styles.header}>Recent posts</h1>
+
       <ul className={styles.articleList}>
         {posts.map((post) => {
           return (
