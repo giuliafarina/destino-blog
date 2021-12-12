@@ -55,7 +55,6 @@ export default styled(SearchBox)`
     color: white;
     margin:3px 7px;
     pointer-events: none;
-    display:${({ hasFocus }) => (hasFocus ? "none" : "")};
-    
+    display:${({ hasFocus }) => (hasFocus ? "none" : "block")};
   }
 `

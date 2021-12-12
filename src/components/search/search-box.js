@@ -4,8 +4,9 @@ import { Search as SearchIcon } from "@styled-icons/fa-solid"
 
 export default connectSearchBox(
     ({ refine, currentRefinement, className, onFocus }) => (
-        <form className={className}>
-            <input
+        // Inline styling to avoid flicker during load of css
+        <form style={{ display: "flex", flexDirection: "row-reverse", alignItems: "center", padding: "20px 8%", marginBottom: "0", background: "transparent" }} className={className}>
+            <input style={{ background: "transparent", border: "none" }}
                 className="SearchInput"
                 type="text"
                 placeholder="Search"
@@ -14,7 +15,7 @@ export default connectSearchBox(
                 value={currentRefinement}
                 onFocus={onFocus}
             />
-            <SearchIcon className="SearchIcon" />
+            <SearchIcon size="1em" className="SearchIcon" />
         </form>
     )
 )
