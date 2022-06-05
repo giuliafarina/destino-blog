@@ -14,7 +14,6 @@ const Resources = () => {
                 content="As well as coaching school leaders and teachers, I work with people
 who have neurodiversity challenges, which is what inspires many of the teaching resources I have
 created."
-                discount="Discount Week: promocode DESTINO1"
 
             />
 
