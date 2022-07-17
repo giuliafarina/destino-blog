@@ -10,7 +10,6 @@ const Hero = ({ image, title, content, discount }) => (
     <div className={styles.details}>
       <h1 className={styles.title}>{title}</h1>
       {content && <p className={styles.content}>{content}</p>}
-      <h2 className={styles.discount}>{discount}</h2>
     </div>
   </div>
 )
